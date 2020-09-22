@@ -1,4 +1,5 @@
 # Deep Graph Normalizer (DGN)
+How to integrate a set of brain multi-graphs into a single graph?
 Please contact mustafaburakgurbuz@gmail.com for inquiries. Thanks. 
 
 ![DGN pipeline](main_figure.png)
