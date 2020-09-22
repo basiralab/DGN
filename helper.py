@@ -3,7 +3,7 @@ import torch
 from torch_geometric.data import Data
 import numpy as np
 import os
-#We used 35813 (part of the Fibonacci Sequence) as the seed when we conducted experiments
+#We used 35813 (part of the Fibonacci Sequence) as the seed
 np.random.seed(35813)
 
 def create_better_simulated(N_Subjects, N_ROIs):
@@ -50,12 +50,12 @@ def simulate_dataset(N_Subjects, N_ROIs, N_views):
         views.append(view)
     return np.stack(views, axis = 3)
 
-#Clears tge given directory
+#Clears the given directory
 def clear_dir(dir_name):
     for file in os.listdir(dir_name):
         os.remove(os.path.join(dir_name, file))
 
-#Antivectorize a given vector
+#Antivectorize given vector
 def antiVectorize(vec, m):
     M = np.zeros((m,m))
     M[np.triu_indices(m)] = vec
