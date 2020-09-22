@@ -1,0 +1,1 @@
+{'learning_rate': 0.001, 'n_attr': 4, 'Linear1': {'in': 4, 'out': 36}, 'conv1': {'in': 1, 'out': 36}, 'Linear2': {'in': 4, 'out': 864}, 'conv2': {'in': 36, 'out': 24}, 'Linear3': {'in': 4, 'out': 120}, 'conv3': {'in': 24, 'out': 5}}
