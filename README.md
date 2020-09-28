@@ -77,7 +77,7 @@ The figure demonstrates an example of output for a population of 37 subjects whe
 
 To install and run DGN, check the following YouTube video: 
 
-https://youtu.be/aT---t2OBO0
+https://youtu.be/8tDNYV0NYpY
 
 To learn about how DGN works, check the following YouTube video: 
 
