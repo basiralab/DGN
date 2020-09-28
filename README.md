@@ -78,8 +78,15 @@ Fey, M. & Lenssen, J. E. Fast graph representation learning with PyTorch Geometr
 Adam Paszke, Sam Gross, Soumith Chintala, Gregory Chanan, Edward Yang, Zachary DeVito, Zeming Lin, Alban Desmaison, Luca Antiga, and Adam Lerer. Automatic differentiation in pytorch. In NIPS-W, 2017.
 
 ## YouTube videos to install and run the code and understand how DGN works
-To install and run DGN, check the following YouTube video: ...
-To learn about how DGN works, check the following YouTube video: ...
+
+To install and run DGN, check the following YouTube video: 
+
+https://youtu.be/aT---t2OBO0
+
+To learn about how DGN works, check the following YouTube video: 
+
+https://youtu.be/Q_WLY2ZNxRk
+
 
 ## Please cite the following paper when using DGN
 ```latex
