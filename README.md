@@ -72,10 +72,6 @@ $ conda activate DGN & python main.py
 ![CBT integration](CBT_integration.png)
 The figure demonstrates an example of output for a population of 37 subjects where each subject has 4 views (each represented by 35 by 35 matrix). Our code takes in a numpy array of size [37, 35, 35, 4] and outputs a 35 by 35 matrix.
 
-## Relevant References
-Fey, M. & Lenssen, J. E. Fast graph representation learning with PyTorch Geometric. In ICLR Workshop on Representation Learning on Graphs and Manifolds (2019).
-
-Adam Paszke, Sam Gross, Soumith Chintala, Gregory Chanan, Edward Yang, Zachary DeVito, Zeming Lin, Alban Desmaison, Luca Antiga, and Adam Lerer. Automatic differentiation in pytorch. In NIPS-W, 2017.
 
 ## YouTube videos to install and run the code and understand how DGN works
 
@@ -86,6 +82,12 @@ https://youtu.be/aT---t2OBO0
 To learn about how DGN works, check the following YouTube video: 
 
 https://youtu.be/Q_WLY2ZNxRk
+
+## Relevant References
+Fey, M. & Lenssen, J. E. Fast graph representation learning with PyTorch Geometric. In ICLR Workshop on Representation Learning on Graphs and Manifolds (2019).
+
+Adam Paszke, Sam Gross, Soumith Chintala, Gregory Chanan, Edward Yang, Zachary DeVito, Zeming Lin, Alban Desmaison, Luca Antiga, and Adam Lerer. Automatic differentiation in pytorch. In NIPS-W, 2017.
+
 
 
 ## Please cite the following paper when using DGN
