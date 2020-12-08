@@ -55,12 +55,28 @@ def clear_dir(dir_name):
     for file in os.listdir(dir_name):
         os.remove(os.path.join(dir_name, file))
 
-#Antivectorize given vector
+#Antivectorize given vector (this gives an asymmetric adjacency matrix)
+#def antiVectorize(vec, m):
+#    M = np.zeros((m,m))
+#     M[np.triu_indices(m)] = vec
+#     M[np.tril_indices(m)] = vec
+#     M[np.diag_indices(m)] = 0
+#     return M
+
+#Antivectorize given vector (this gives a symmetric adjacency matrix)
 def antiVectorize(vec, m):
+    """
+    #Old Code
     M = np.zeros((m,m))
     M[np.triu_indices(m)] = vec
     M[np.tril_indices(m)] = vec
     M[np.diag_indices(m)] = 0
+    """
+    # Correct:
+    M = np.zeros((m,m))
+    M[np.tril_indices(m,k=-1)] = vec
+    M= M.transpose()
+    M[np.tril_indices(m,k=-1)] = vec
     return M
 
 #CV splits and mean-std calculation for the loss function
