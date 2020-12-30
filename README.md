@@ -88,7 +88,9 @@ Fey, M. & Lenssen, J. E. Fast graph representation learning with PyTorch Geometr
 
 Adam Paszke, Sam Gross, Soumith Chintala, Gregory Chanan, Edward Yang, Zachary DeVito, Zeming Lin, Alban Desmaison, Luca Antiga, and Adam Lerer. Automatic differentiation in pytorch. In NIPS-W, 2017.
 
+## DGN on arXiv
 
+https://arxiv.org/abs/2012.14131
 
 ## Please cite the following paper when using DGN
 ```latex
