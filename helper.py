@@ -12,7 +12,10 @@ def create_better_simulated(N_Subjects, N_ROIs):
         so this function creates better dataset for demo.
         However, number of views are hardcoded.
     """
-    features =  np.triu_indices(N_ROIs)[0].shape[0]
+    # Set offset (k) = 1 since diagonal entries are zero
+    # i.e. we are not interested in self-loops
+    # n_features = N_ROIs * (N_ROIs - 1) / 2
+    features =  np.triu_indices(N_ROIs, k=1)[0].shape[0]
     view1 = np.random.normal(0.1,0.069, (N_Subjects, features))
     view1 = view1.clip(min = 0)
     view1 = np.array([antiVectorize(v, N_ROIs) for v in view1])
@@ -73,10 +76,13 @@ def antiVectorize(vec, m):
     M[np.diag_indices(m)] = 0
     """
     # Correct:
-    M = np.zeros((m,m))
-    M[np.tril_indices(m,k=-1)] = vec
-    M= M.transpose()
-    M[np.tril_indices(m,k=-1)] = vec
+
+    assert vec.shape[0] == m * (m - 1) / 2, "vec must be of length m*(m-1)/2 i.e. it does not contain the diagonal entries"
+    
+    M = np.zeros((m, m))
+    M[np.tril_indices(m, k=-1)] = vec
+    M = M + M.T
+
     return M
 
 #CV splits and mean-std calculation for the loss function
