@@ -94,12 +94,11 @@ https://arxiv.org/abs/2012.14131
 
 ## Please cite the following paper when using DGN
 ```latex
-@inproceedings{adnel2023affordable,
-  title={Affordable Graph Neural Network Framework Using Topological Graph Contraction},
-  author={Adnel, Christopher and Rekik, Islem},
-  booktitle={Workshop on Medical Image Learning with Limited and Noisy Data},
-  pages={35--46},
-  year={2023},
-  organization={Springer}
-}
+  @inproceedings{gurbuzrekik2020,
+    title={Deep Graph Normalizer: A Geometric Deep Learning Approach for Estimating Connectional Brain Templates},
+    author={Gurbuz, Mustafa Burak and Rekik, Islem},
+    booktitle={Medical Image Computing and Computer Assisted Intervention},
+    year={2020},
+    organization={Springer}
+  }
 ```
