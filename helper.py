@@ -44,7 +44,7 @@ def simulate_dataset(N_Subjects, N_ROIs, N_views):
         Return:
             dataset: random dataset with shape [N_Subjects, N_ROIs, N_ROIs, N_views]
     """
-    features =  np.triu_indices(N_ROIs)[0].shape[0]
+    features =  np.triu_indices(N_ROIs, k=1)[0].shape[0]
     views = []
     for _ in range(N_views):
         view = np.random.uniform(0.1,2, (N_Subjects, features))
